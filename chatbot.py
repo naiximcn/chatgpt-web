@@ -16,4 +16,4 @@ def chat(prompt):
     if len(answer) != 0:
         return answer
     else:
-        return "ChatGPT不想回答你的问题"
+        return "ERROR ChatGPT不想回答你的问题" #没有收到消息的回答
