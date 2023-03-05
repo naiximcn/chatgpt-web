@@ -2,7 +2,7 @@ import os
 import openai
 
 def chat(prompt):
-    openai.api_key = "replace with your api key"
+    openai.api_key = "想屁吃" #在这里替换你的API 如果没有去https://platform.openai.com/account/api-keys新建一个
     response = openai.Completion.create(
         model="text-davinci-003",
         prompt=prompt,
@@ -16,4 +16,4 @@ def chat(prompt):
     if len(answer) != 0:
         return answer
     else:
-        return "Error: ChatGPT didn't return any texts."
+        return "ChatGPT不想回答你的问题"
