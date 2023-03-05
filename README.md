@@ -1,6 +1,8 @@
 # chatgpt-bot
 利用OpenAI的gpt3.5API实现网站ChatGpt
 
+程序遵守MIT协议开源
+
 ## 安装与使用
 ### 需要
 [`python`](python.org/downloads/)
