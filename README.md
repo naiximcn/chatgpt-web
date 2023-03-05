@@ -5,11 +5,9 @@
 
 ## 安装与使用
 ### 需要
-[`python`](python.org/downloads/)
+环境及库：[`python`](python.org/downloads/) `openai` `flask`
 
-`openai`(Python库)
-
-`flask`(Python库)
+网络：~~你要会游泳~~ 能访问OpenAI
 
 ### 配置
 * 在chatboy.py: openai.api_key 中更换自己的API   如果没有去[`OpenAI`](https://platform.openai.com/account/api-keys)新建一个 注意：切勿泄露你的API 只建议在本地填入API
