@@ -4,9 +4,9 @@ from chatbot import chat
 app = Flask(__name__)
 
 
-@app.route('replace with your url')
+@app.route('//index.html') #可以随便瞎写一个地址防止别人用(bushi)
 def home():
-    return render_template('index.html')
+    return render_template('index.html') #可以替换成在templates目录下的其他html
 
 
 @app.route('/get_response', methods=['POST'])
