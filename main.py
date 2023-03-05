@@ -4,7 +4,7 @@ from chatbot import chat
 app = Flask(__name__)
 
 
-@app.route('//6//gpt.sb') #可以随便瞎写一个地址防止别人用(bushi) 访问时IP:端口+这里的地址双个斜杠单个斜杠 e.g 127.0.0.1:7666/6/gpt.cnm
+@app.route('//6//gpt.sb') #可以随便瞎写一个地址防止别人用(bushi) 访问时IP:端口+这里的地址双个斜杠单个斜杠 e.g 127.0.0.1:7666/6/gpt.sb
 def home():
     return render_template('index.html') #可以替换成在templates目录下的其他html
 
