@@ -1,7 +1,9 @@
-# chatgpt-web
-利用OpenAI的gpt3.5API实现网站ChatGPT
+# ChatGPT Web
+利用OpenAI的ChatGPT-3.5API实现网页ChatGPT
 
-程序遵守MIT协议开源
+*程序遵守 MIT 协议开源*
+
+_**程序任在测试阶段 目前无法直接运行使用**_~~(请不要在这时候瞎折腾)~~
 
 ## 安装与使用
 ### 需要
