@@ -1,5 +1,5 @@
-# chatgpt-bot
-利用OpenAI的gpt3.5API实现网站ChatGpt
+# chatgpt-web
+利用OpenAI的gpt3.5API实现网站ChatGPT
 
 程序遵守MIT协议开源
 
