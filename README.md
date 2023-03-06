@@ -5,14 +5,24 @@
 
 ## 安装与使用
 ### 需要
-环境及库：[`python`](python.org/downloads/) `openai` `flask`
+环境：[`python`](python.org/downloads/)
 
-网络：~~你要会游泳~~ 能访问OpenAI
+Python库：`Flask` `openai`
+
+网络：~~你要会游泳~~ 能正常访问并使用`OpenAI`
+
+其他：一个OpenAI账户及一个OpenAI API
+
+> 如果没有去[`OpenAI`](https://platform.openai.com/account/api-keys)新建一个
+> 
+> **注意：切勿泄露你的API 只建议在本地填入API**
 
 ### 配置
-* 在chatboy.py: openai.api_key 中更换自己的API   如果没有去[`OpenAI`](https://platform.openai.com/account/api-keys)新建一个 注意：切勿泄露你的API 只建议在本地填入API
-- 在main.py: @app.route 中更换路径   可以随便瞎写一个地址防止别人用(bushi) 访问时IP:端口+这里的地址双个斜杠单个斜杠 e.g 127.0.0.1:7666/6/gpt.sb
-- 在main.py: app.run 中更换绑定IP和端口   如需外网访问0.0.0.0即可 如只需本机访问就改成127.0.0.1
+- **在chatboy.py: openai.api_key 中更换自己的API** *(必要)*
+- 在main.py: @app.route 中更换http路径
+> 可以随便瞎写一个地址防止别人用(bushi) 访问时IP:端口+这里的地址双个斜杠单个斜杠 e.g 127.0.0.1:7666/6/gpt.sb
+- 在main.py: app.run 中更换绑定IP和端口
+> 如需外网访问0.0.0.0即可 如只需本机访问就改成127.0.0.1
 - 在chatboy.py: retun 中更换没有收到返回的回答
 - 在index.html: 43、45行 中更改标题和运营信息
 
@@ -30,6 +40,14 @@ Press CTRL+C to quit
 ```
 
 ### 使用
-浏览器访问 `IP`:`端口`+`@app.route中的地址(双个斜杠单个斜杠)` e.g `127.0.0.1:7666/6/gpt.sb`
+浏览器访问 `IP`:`端口`+`@app.route中的地址(双个斜杠单个斜杠)`
+> *e.g `127.0.0.1:7666/6/gpt.sb`*
 
 在输入框中输入问题按`发送`键发送
+
+### TODO List
+- [ ] 单独分离配置文件
+- [ ] 使用WEUI库重写操作界面
+- [ ] 多语言支持
+- [ ] 操作界面历史问题+回答记录
+- [x] 。。。
