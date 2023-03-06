@@ -3,7 +3,7 @@ import openai
 
 def chat(prompt):
     openai.api_key = "想屁吃" #在这里替换你的API 如果没有去https://platform.openai.com/account/api-keys新建一个 注意：切勿泄露你的API 只建议在本地填入API
-    response = openai.Completion.create(
+    response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         prompt=prompt,
         temperature=0.7,
