@@ -1,57 +1,27 @@
 # ChatGPT Web
-利用OpenAI的ChatGPT-3.5API实现网页ChatGPT
 
-*程序遵守 MIT 协议开源*
+> 没有用户的程序，毫无意义
 
-_**程序任在测试阶段 目前无法直接运行使用**_~~(请不要在这时候瞎折腾)~~
+## 本程序已停止开发
 
-> 可能只会在周末更新 最近因为流感莫得晚自习了 也许工作日晚上会小改 但这时候的版本是绝对不能用的
+经过一番思考 我还是放弃了
 
-## 安装与使用
-### 需要
-环境：[`python`](python.org/downloads/)
+一个同样的程序 做的人越多 被用户选中的可能性越大
 
-Python库：`Flask` `openai`
+现在全网几乎所有~~API调用工程师~~懂点编程的人 都在做面向OpenAI编程 而这其中 又几乎所有人都是在做ChatGPT的网页或客户端
 
-网络：~~你要会游泳~~ 能正常访问并使用`OpenAI`
+而对于一群类似的产品 用户会选择的是`界面好看` `运行便捷` `简单易用` `功能巨多`的那个产品
 
-其他：一个OpenAI账户及一个OpenAI API
+也就是说 用户只会从一大堆产品中挑选一个最适合自己的
 
-> 如果没有去[`OpenAI`](https://platform.openai.com/account/api-keys)新建一个
-> 
-> **注意：切勿泄露你的API 只建议在本地填入API**
+那么 去开发一个毫无亮点的应用 是毫无意义可言的
 
-### 配置
-- **在chatboy.py: openai.api_key 中更换自己的API** *(必要)*
-- 在main.py: @app.route 中更换http路径
-> 可以随便瞎写一个地址防止别人用(bushi) 访问时IP:端口+这里的地址双个斜杠单个斜杠 e.g 127.0.0.1:7666/6/gpt.sb
-- 在main.py: app.run 中更换绑定IP和端口
-> 如需外网访问0.0.0.0即可 如只需本机访问就改成127.0.0.1
-- 在chatboy.py: retun 中更换没有收到返回的回答
-- 在index.html: 43、45行 中更改标题和运营信息
+但是 我去做这款软件的目的则是为了自己使用
 
-### 启动
-打开终端 在文件夹目录下输入 `Python路径 main.py` 并回车
+听起来不冲突对吧 但是当我真正了解别人的产品后我发现
 
-如果出现类似于以下内容则说明启动成功
-```
- * Serving Flask app 'main'
- * Debug mode: off
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on all addresses (0.0.0.0)
- * Running on http://127.0.0.1:7666
-Press CTRL+C to quit
-```
+别人的产品完全符合我要求 下载下来直接用就好了
 
-### 使用
-浏览器访问 `IP`:`端口`+`@app.route中的地址(双个斜杠单个斜杠)`
-> *e.g `127.0.0.1:7666/6/gpt.sb`*
+根本不需要像现在这样卑微的调代码改bug 他们的产品就是最好的
 
-在输入框中输入问题按`发送`键发送
-
-### TODO List
-- [ ] 单独分离配置文件
-- [ ] 使用WEUI库重写操作界面
-- [ ] 多语言支持
-- [ ] 操作界面历史问题+回答记录
-- [x] 。。。
+所以。。。 何必呢？
